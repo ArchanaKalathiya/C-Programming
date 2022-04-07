@@ -1,9 +1,11 @@
 // Multiplication of number entered by user
 
+
 #include <stdio.h>
 int main()
 {
     /* Print multiplication table of number entered by user   */
+
     int m, n;
     printf("Enter number to be multiplied : ");
     scanf("%d", &m);
