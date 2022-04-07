@@ -1,3 +1,5 @@
+// Multiplication of number entered by user
+
 #include <stdio.h>
 int main()
 {
