@@ -17,7 +17,7 @@ Algorithm
 - Quick sort the left side of the pivot 
 - Quick sort the right side of the array
 
-Time complexity of the Quick sort 
+Time complexity 
 - 
 ### Best case : <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When the pivot is chosen as median of the array means when our array gets divided into two almost equal subarrays at each partition.
