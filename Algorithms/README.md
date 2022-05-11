@@ -16,3 +16,5 @@
 ## Kruskal's Algorithm 
 
 ## Prim's Algorithm 
+
+## Warshall's Algorithm 
