@@ -41,3 +41,35 @@ T(N) = T(n-1) - O(n) <br>
 T(N) = O(n^2)
 
 Therefore , the worst case compllexity of the quicksort algorithm is O(n^2)
+
+
+
+## Merge Sort 
+
+It is also using divide and conquer method 
+
+Merge sort first divides the array into equal halves and then combines them in a sorted manner.
+
+Algorithm 
+-
+- Step 1 − If it is only one element in the list it is already sorted, return.
+- Step 2 − divide the list recursively into two halves until it can no more be divided.
+- Step 3 − merge the smaller lists into new list in sorted order.
+
+Time complexity 
+- 
+
+Time complexity can be expressed as following recurrence relation. 
+T(n) = 2T(n/2) + θ(n)
+### Best case : <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When the pivot is chosen as median of the array means when our array gets divided into two almost equal subarrays at each partition.
+ Then , <br>T(N) = T(n/2) + T(n/2) + O(n) [element taking time to swap]<br>
+T(N) = 2T(n/2) + O(n) <br>
+T(N) = O(nlogn)
+
+Therefore , the best case complexity of Quick sort algorithm is O(nlogn)
+
+### Average case : <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+When pivot is at random position . Then , 
+the average time complexity remains O(nlogn).
