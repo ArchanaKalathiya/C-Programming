@@ -18,3 +18,6 @@
 ## Prim's Algorithm 
 
 ## Warshall's Algorithm 
+### Topological Sorting 
+### Transitive Closure 
+
