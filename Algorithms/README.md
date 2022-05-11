@@ -14,3 +14,5 @@
 ## Knapsack Algorithm 
 
 ## Kruskal's Algorithm 
+
+## Prim's Algorithm 
