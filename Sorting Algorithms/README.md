@@ -62,14 +62,11 @@ Time complexity
 Time complexity can be expressed as following recurrence relation. 
 T(n) = 2T(n/2) + θ(n)
 ### Best case : <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When the pivot is chosen as median of the array means when our array gets divided into two almost equal subarrays at each partition.
- Then , <br>T(N) = T(n/2) + T(n/2) + O(n) [element taking time to swap]<br>
-T(N) = 2T(n/2) + O(n) <br>
-T(N) = O(nlogn)
+&nbsp;&nbsp;&nbsp;O(n*log n)
 
-Therefore , the best case complexity of Quick sort algorithm is O(nlogn)
 
 ### Average case : <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-When pivot is at random position . Then , 
-the average time complexity remains O(nlogn).
+&nbsp;&nbsp;&nbsp;O(n*log n)
+
+### Worst case : <br>
+&nbsp;&nbsp;&nbsp;O(n*log n)
