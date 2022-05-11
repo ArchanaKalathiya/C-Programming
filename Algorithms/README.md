@@ -13,3 +13,4 @@
 
 ## Knapsack Algorithm 
 
+## Kruskal's Algorithm 
