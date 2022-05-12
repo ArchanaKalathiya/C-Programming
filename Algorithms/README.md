@@ -1,8 +1,8 @@
-# Algorithms 
+# Algorithms
 
-## Dijkstra's Algorithm 
+## Dijkstra's Algorithm
 
- - Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
+- Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
 
 ## Floyd's Algorithm
 
@@ -14,19 +14,20 @@
 
 - This algorithm follows the dynamic programming approach to find the shortest paths.
 
+### Time Complexity
 
+There are three loops. Each loop has constant complexities. So, the time complexity of the Floyd-Warshall algorithm is O(n3).
 
+## Graph Traversal's
 
-## Graph Traversal's 
+## Knapsack Algorithm
 
+## Kruskal's Algorithm
 
-## Knapsack Algorithm 
+## Prim's Algorithm
 
-## Kruskal's Algorithm 
+## Warshall's Algorithm
 
-## Prim's Algorithm 
+### Topological Sorting
 
-## Warshall's Algorithm 
-### Topological Sorting 
-### Transitive Closure 
-
+### Transitive Closure
