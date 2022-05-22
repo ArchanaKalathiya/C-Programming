@@ -57,7 +57,7 @@ The graph has two types of traversal algorithms. These are called the Breadth Fi
 
 - DFS
     1. Visit the adjacent unvisited vertex. Mark it as visited. Display it. Push it in a stack. 
-    2. If no adjacent vertex is found, pop up a vertex from the stack. (It will pop up all the vertices from the stack, which do not have adjacent vertices.) 
+    2. If no adjacent vertex is found, pop up a vertex from the stack. (It will pop up all the vertices from the stack, which do not have adjacent vertices. 
     3. Repeat Rule 1 and Rule 2 until the stack is empty. 
 
 ### Time Complexity
