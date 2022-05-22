@@ -27,8 +27,15 @@
 - Floyd-Warhshall algorithm is also called as Floyd's algorithm, Roy-Floyd algorithm, Roy-Warshall algorithm, or WFI algorithm.
 
 - This algorithm follows the dynamic programming approach to find the shortest paths.
+#### Algorithm
+1. Initialize the shortest paths between any 2 vertices with Infinity.
 
-### Time Complexity
+2. Find all pair shortest paths that use 0 intermediate vertices, then find the shortest paths that use 1 intermediate vertex and so on.. until using all N vertices as intermediate nodes.
+
+3. Minimize the shortest paths between any 2 pairs in the previous operation.
+
+4. For any 2 vertices (i,j) , one should actually minimize the distances between this pair using the first K nodes, so the shortest path will be: min(dist[i][k]+dist[k][j],dist[i][j]).
+#### Time Complexity
 
 There are three loops. Each loop has constant complexities. So, the time complexity of the Floyd-Warshall algorithm is O(n3).
 
@@ -63,7 +70,23 @@ Space complexity O(h) where h is the maximum height of the tree.
 
 
 ## Knapsack Algorithm
+- The knapsack algorithm can be used to solve a number of programming problems 
+- This algorithm is a part of the dynamic programming. In dynamic programming we solve the bigger problem by diving it into smaller problems. Keep the result of the smaller problems in cache and then solving the bigger problem using the cache.
 
+#### Algorithm 
+1. Divide the problem with having a smaller knapsack with smaller problems. We can start with knapsack of 0,1,2,3,4 capacity.
+2. M[items+1][capacity+1] is the two dimensional array which will store the value for each of the maximum possible value for each sub problem. The row and column contains one items extra considering the solution with zero capacity and no item.
+
+    M[i][capacity] = max(E, I)
+
+    where
+
+    E(If excluded) = M[i-1][capacity] and
+
+    I(If included and small enough) = value(i) + M[i-1][capacity – weight]
+
+#### Time complexity 
+O (N*W). where 'N' is the number of weight elements and 'W' is the capacity of the knapsack.
 ## Kruskal's Algorithm
 
 ## Prim's Algorithm
