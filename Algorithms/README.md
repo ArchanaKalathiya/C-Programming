@@ -112,10 +112,21 @@ hopes of finding a global optimum. We start from one vertex and keep adding edge
 tree
 3. Keep repeating step 2 until we get a minimum spanning tree
 
-#### Time Complxity
+#### Time Complexity
 The time complexity of the Prim's Algorithm is O ( ( V + E ) l o g V ) because each vertex is inserted in the priority queue only once and insertion in priority queue take logarithmic time.
 ## Topological Sorting
-
+Topological sorting for Directed Acyclic Graph (DAG) 
+is a linear ordering of vertices such that for every 
+directed edge u v, vertex u comes before v in the 
+ordering. Topological Sorting for a graph is not 
+possible if the graph is not a DAG. 
+#### Algorithm
+1. Find a vertex that has indegree = 0 (no incoming edges)
+2. Remove all the edges from that vertex that go outward (make it's outdegree = 0, remove outgoing edges)
+3. Add that vertex to the array representing topological sorting of the graph
+4. Repeat till there are no more vertices left.
+#### Time complexity 
+Time complexity - O(N + M)O(N+M) Where N is number of nodes and M is number of edges
 ## Transitive Closure
 - Warshall's algorithm is used to determine the transitive closure of a directed graph or all paths in a directed graph by using the adjacency matrix. 
 - Transitive Closure it the reachability matrix 
