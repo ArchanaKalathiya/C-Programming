@@ -34,8 +34,32 @@ There are three loops. Each loop has constant complexities. So, the time complex
 
 ## Graph Traversal's
 The graph has two types of traversal algorithms. These are called the Breadth First Search and Depth First Search.
+ 
+- Breadth first traversal
+    - Breadth First Search (BFS) algorithm traverses a graph in a breadth ward motion and uses a queue to remember to get the next vertex to start a search. 
+- Depth first traversal
+    - Depth First Search (DFS) algorithm traverses a graph in a depth ward motion and uses a stack to remember to get the next vertex to start a search.
+
+
+#### Algorithm
+- BFS 
+
+    1. Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it in a queue. 
+    2. If no adjacent vertex is found, remove the first vertex from the queue. 
+    3. Repeat Rule 1 and Rule 2 until the queue is empty. 
+
+- DFS
+    1. Visit the adjacent unvisited vertex. Mark it as visited. Display it. Push it in a stack. 
+    2. If no adjacent vertex is found, pop up a vertex from the stack. (It will pop up all the vertices from the stack, which do not have adjacent vertices.) 
+    3. Repeat Rule 1 and Rule 2 until the stack is empty. 
 
 ### Time Complexity
+- BFS - 
+BFS is O(V + E) when Adjacency List is used and O(V^2) when Adjacency Matrix is used, where V stands for vertices and E stands for edges. Space complexity of O(|V|) = O(b^d)
+- DFS - 
+Time complexity is O(V)
+Space complexity O(h) where h is the maximum height of the tree. 
+
 
 
 ## Knapsack Algorithm
