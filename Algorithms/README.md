@@ -114,8 +114,39 @@ tree
 
 #### Time Complxity
 The time complexity of the Prim's Algorithm is O ( ( V + E ) l o g V ) because each vertex is inserted in the priority queue only once and insertion in priority queue take logarithmic time.
-## Warshall's Algorithm
+## Topological Sorting
 
-### Topological Sorting
+## Transitive Closure
+- Warshall's algorithm is used to determine the transitive closure of a directed graph or all paths in a directed graph by using the adjacency matrix. 
+- Transitive Closure it the reachability matrix 
+to reach from vertex u to vertex v of a 
+graph. One graph is given, we must find a 
+vertex v which is reachable from another 
+vertex u, for all vertex pairs (u, v).
+- The final matrix is the Boolean type. When there 
+is a value 1 for vertex u to vertex v, it means 
+that there is at least one path from u to v.
+- The transitive closure of a directed acyclic graph (DAG) is the reachability relation of the DAG and a strict partial order.
 
-### Transitive Closure
+#### Algorithm 
+    transColsure(graph)
+
+Input 
+
+        1 1 0 1
+        0 1 1 0
+        0 0 1 1
+        0 0 0 1
+
+
+Output 
+
+        1 1 1 1
+        0 1 1 1
+        0 0 1 1
+        0 0 0 1
+
+#### Time Complexity
+
+The Time complexity of computing transitive closure of binary relation on a set of n elements is known to be O(n^3).
+
