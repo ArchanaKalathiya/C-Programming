@@ -5,14 +5,14 @@
 - Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
 
 #### Algorithm
- - Create a set sptSet (shortest path tree set) that keeps track of vertices included in the shortest-path tree, i.e., whose minimum distance from the source is calculated and finalized. Initially, this set is empty. 
-- Assign a distance value to all vertices in the input graph. Initialize all distance values as INFINITE. Assign distance value as 0 for the source vertex so that it is picked first. 
-- While sptSet doesn’t include all vertices 
+ 1. Create a set sptSet (shortest path tree set) that keeps track of vertices included in the shortest-path tree, i.e., whose minimum distance from the source is calculated and finalized. Initially, this set is empty. 
+2. Assign a distance value to all vertices in the input graph. Initialize all distance values as INFINITE. Assign distance value as 0 for the source vertex so that it is picked first. 
+3. While sptSet doesn’t include all vertices 
     -  Pick a vertex u which is not there in sptSet and has a minimum distance value. 
      -  Include u to sptSet. 
     -  Update distance value of all adjacent vertices of u
           
-- To update the distance values, iterate through all adjacent vertices. For every adjacent vertex v, if the sum of distance value of u (from source) and weight of edge u-v, is less than the distance value of v, then update the distance value of v.
+4. To update the distance values, iterate through all adjacent vertices. For every adjacent vertex v, if the sum of distance value of u (from source) and weight of edge u-v, is less than the distance value of v, then update the distance value of v.
 
 #### Time Complexity
  Time complexity of Dijkstra's algorithm is O ( V 2 ) O(V^2) O(V2) where V is the number of verices in the graph.
@@ -88,9 +88,32 @@ Space complexity O(h) where h is the maximum height of the tree.
 #### Time complexity 
 O (N*W). where 'N' is the number of weight elements and 'W' is the capacity of the knapsack.
 ## Kruskal's Algorithm
+- Kruskal’s Algorithm is a famous greedy algorithm.
+- It is used for finding the Minimum Spanning Tree (MST) of a given graph.
+- To apply Kruskal’s algorithm, the given graph must be weighted, connected and undirected. [no cycles]
 
+#### Algorithm 
+1. Sort all the edges from low weight to high weight.
+2.  Take the edge with the lowest weight and use it to connect the vertices of graph.
+3. If adding an edge creates a cycle, then reject that edge and go for the next least weight edge
+4. Keep adding edges until all the vertices are connected and a Minimum Spanning Tree (MST) is obtained.
+
+#### Time Complexity 
+Kruskal's algorithm's time complexity is O(E log V), V being the number of vertices. 
 ## Prim's Algorithm
+-   Prim's algorithm is a minimum spanning tree algorithm that takes a graph as input and finds 
+the subset of the edges of that graph which form a tree that includes every vertex
+-   It has the minimum sum of weights among all the trees that can be formed from the graph
+-   It falls under a class of algorithms called greedy algorithms that find the local optimum in the 
+hopes of finding a global optimum. We start from one vertex and keep adding edges with the lowest weight until we reach our goal.
+#### Algorithm 
+1. Initialize the minimum spanning tree with a vertex chosen at random.
+2. Find all the edges that connect the tree to new vertices, find the minimum and add it to the 
+tree
+3. Keep repeating step 2 until we get a minimum spanning tree
 
+#### Time Complxity
+The time complexity of the Prim's Algorithm is O ( ( V + E ) l o g V ) because each vertex is inserted in the priority queue only once and insertion in priority queue take logarithmic time.
 ## Warshall's Algorithm
 
 ### Topological Sorting
