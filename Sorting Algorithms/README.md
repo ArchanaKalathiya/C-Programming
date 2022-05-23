@@ -81,3 +81,24 @@ T(n) = 2T(n/2) + θ(n)
 ## Counter Sort
 
 Counting sort is an algorithm for sorting a collection of objects according to keys that are small positive integers; that is, it is an integer sorting algorithm.
+
+
+### Algorithm
+
+Step 1 : Counting_Sort( array, ele ) // ele is number of elements in the array
+
+Step 2 : max <- discover the array's biggest element
+
+Step 3 : Create a count array of maximum + 1 size and fill it with all 0s.
+
+for i = 0 to element
+
+Step 4 : discover the total number of occurrences of each element and save the count in the count array at the index.
+
+for i = 0 to max
+
+Step 5 : Add the current(i) and previous(i-1) counts to get the cumulative sum, which you may save in the count array.
+
+For j = ele down to 1
+
+Step 6 : Decrement the count of each element copied by one before copying it back into the input array.
