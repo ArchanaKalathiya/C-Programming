@@ -61,9 +61,7 @@ Merge sort first divides the array into equal halves and then combines them in a
 
 Time complexity
 
--
-
-Time complexity can be expressed as following recurrence relation.
+- Time complexity can be expressed as following recurrence relation.
 T(n) = 2T(n/2) + θ(n)
 
 ### Best case : <br>
@@ -102,3 +100,7 @@ Step 5 : Add the current(i) and previous(i-1) counts to get the cumulative sum, 
 For j = ele down to 1
 
 Step 6 : Decrement the count of each element copied by one before copying it back into the input array.
+
+### Time Complexity 
+
+O(n+k) where n is the number of elements in the input array and k is the range of input. 
