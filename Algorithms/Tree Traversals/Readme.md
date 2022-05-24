@@ -26,6 +26,16 @@ finally the right subtre
 Time complexity of Preorder is O(n)
 
 ## Postorder Traversal
+In this traversal method, the root node 
+is visited last, hence the name. First 
+we traverse the left subtree, then the 
+right subtree and finally the root node.
+
+### Algorithm 
+
+1. Recursively traverse the left subtree.
+2. Recursively visit the right subtree.
+3. Visit the root nodes.
 
 ## Inorder Travesal
 
