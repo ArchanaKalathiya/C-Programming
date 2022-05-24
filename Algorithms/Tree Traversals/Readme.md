@@ -42,8 +42,9 @@ Time complexity of Postorder is O(n)
 
 ## Inorder Travesal
 
-If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
-
+- If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
+- Inorder traversal gives nodes in non-decreasing order. 
+- To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder traversal s reversed can be used. 
 
 ### Algorithm
 1. Recursively visit the left subtree.
