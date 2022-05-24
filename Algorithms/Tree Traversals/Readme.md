@@ -45,3 +45,9 @@ Time complexity of Postorder is O(n)
 ## Inorder Travesal
 
 
+### Algorithm
+1. Recursively visit the left subtree.
+2. Visit the root node .
+3. Recursively visit the right subtree .
+
+# Time complexity 
