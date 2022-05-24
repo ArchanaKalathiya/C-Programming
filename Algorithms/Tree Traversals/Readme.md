@@ -40,8 +40,6 @@ right subtree and finally the root node.
 ### Time complexity 
 Time complexity of Postorder is O(n)
 
-
-
 ## Inorder Travesal
 
 If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
@@ -51,4 +49,5 @@ If a binary tree is traversed in-order, the output will produce sorted key value
 2. Visit the root node .
 3. Recursively visit the right subtree .
 
-# Time complexity 
+### Time complexity 
+If a tree has n nodes, then each node is visited only once in inorder traversal and hence the complexity is O(n).
