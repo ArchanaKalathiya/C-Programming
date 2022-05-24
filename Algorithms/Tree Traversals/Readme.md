@@ -17,9 +17,9 @@ finally the right subtre
 
 ### Algorithm
 
-1. Recursively traverse the left subtree.
-2. Recursively visit the right subtree.
-3. Visit the root nodes.
+1. Visit the root nodes 
+2. Recusrsively visit the left subtree .
+3. Recursively visit the right subtree.
 
 ### Time Complexity
 
@@ -28,3 +28,5 @@ Time complexity of Preorder is O(n)
 ## Postorder Traversal
 
 ## Inorder Travesal
+
+
