@@ -37,6 +37,11 @@ right subtree and finally the root node.
 2. Recursively visit the right subtree.
 3. Visit the root nodes.
 
+### Time complexity 
+Time complexity of Postorder is O(n)
+
+
+
 ## Inorder Travesal
 
 
