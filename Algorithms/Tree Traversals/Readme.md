@@ -44,6 +44,7 @@ Time complexity of Postorder is O(n)
 
 ## Inorder Travesal
 
+If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
 
 ### Algorithm
 1. Recursively visit the left subtree.
