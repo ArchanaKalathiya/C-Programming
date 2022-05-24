@@ -7,7 +7,6 @@ struct node
     struct node *left;
     struct node *right;
 };
-
 struct node *createNode(int data)
 {
     struct node *n;                                 // creating a node pointer
@@ -17,7 +16,6 @@ struct node *createNode(int data)
     n->right = NULL;                                // Setting the left and right children to NULL
     return n;                                       // Finally returning the created node
 }
-
 void preOrder(struct node *root)
 {
     if (root != NULL)
@@ -27,7 +25,6 @@ void preOrder(struct node *root)
         preOrder(root->right);
     }
 }
-
 void postOrder(struct node *root)
 {
     if (root != NULL)
@@ -37,7 +34,6 @@ void postOrder(struct node *root)
         printf("%d ", root->data);
     }
 }
-
 void inOrder(struct node *root)
 {
     if (root != NULL)
@@ -47,7 +43,6 @@ void inOrder(struct node *root)
         inOrder(root->right);
     }
 }
-
 int main()
 {
 
