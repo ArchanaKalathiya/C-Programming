@@ -1,4 +1,4 @@
-//While loop
+// While loop
 #include<iostream>
 using namespace std;
 int main()
