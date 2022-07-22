@@ -5,11 +5,11 @@ int fact(int num)
 {
     if (num<1) //Factorial of 1 and 0 is 1 and if num<0 means factorial is 1
     {
-        return 1;
+        return 1; //base case
     }
     else 
     {
-        return num*fact(num-1);
+        return num*fact(num-1); //reursive case 
     }
 }
 int main()
