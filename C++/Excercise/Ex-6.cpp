@@ -1,5 +1,5 @@
 //Write a program of Fibonacci series 
-//Fibonacci number is sum of its previos numbers
+//Fibonacci number is sum of its two previous numbers
 #include<iostream>
 using namespace std;
 int fib(int num)
