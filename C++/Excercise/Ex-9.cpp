@@ -26,3 +26,4 @@ int main()
    cout << " Salary drawn upto : " << totalDrawan << endl;
    cout << " Balance till : " << balance << endl;   
    return 0;
+}
