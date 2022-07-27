@@ -18,7 +18,7 @@ int main()
     cout << "Marks: \n";
     cin >> s1.marks;
 
-    cout << "--------------Student Detail --------------" << endl;
+    cout << " --------------Student Detail -------------- " << endl;
     cout << "Name of the student : " << s1.name << endl;
     cout << "Roll no of the student : " << s1.roll_no << endl;
     cout << "Marks : " << s1.marks << endl;
