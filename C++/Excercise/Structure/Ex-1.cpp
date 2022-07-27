@@ -1,4 +1,4 @@
-// Write a Program containign data of members working is company using structures
+// Write a Program containing data of employee working is company using structures
 
 #include <iostream>
 using namespace std;
@@ -19,10 +19,11 @@ int main()
     cout << "Salary : ";
     cin >> m.salary;
 
-    cout << "---------------Data of members-------------"
+    cout << "---------------Data of employee-------------"
          << "\n";
-    cout << "Name of the mem 1 : " << m.name << endl;
-    cout << "Age of mem : " << m.age << endl;
+    cout << "Name of the employee : " << m.name << endl;
+    cout << "Age of employee : " << m.age << endl;
     cout << "Salary : " << m.salary << " Lac" << endl;
     return 0;
+    
 }
