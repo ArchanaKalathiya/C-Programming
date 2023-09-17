@@ -11,9 +11,9 @@ int main()
     cout<<s<<endl;
 
     s.push_back('Y');
-    cout<<"After using push back function"<<s<<endl;
+    cout<<"After using push back function "<<s<<endl;
 
     s.pop_back();
-    cout<<"After using pop back function"<<s<<endl;
+    cout<<"After using pop back function "<<s<<endl;
     return 0;
 }
